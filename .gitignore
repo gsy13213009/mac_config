@@ -1,0 +1,18 @@
+#! $HOME/.gitignore
+
+#----[ ignore all ] -----
+*
+#---[ consider list ]---
+!*.[Xx]resources
+!*.conf
+!*config*
+!*[a-zA-Z]*rc
+!.config/
+!.config/*
+!.oh-my-zsh/**
+!.oh-my-zsh
+#---[ ignore list ]---
+.cshrc
+.gitconfig
+.tcshrc
+.pearrc
