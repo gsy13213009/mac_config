@@ -16,3 +16,5 @@
 .gitconfig
 .tcshrc
 .pearrc
+.oh-my-zsh/cache/
+**.github

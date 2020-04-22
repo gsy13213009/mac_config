@@ -72,11 +72,9 @@ plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
 alias vi='vim'
-alias config='/usr/bin/git --git-dir=$HOME/.mydotfiles/ --work-tree=$HOME'
 
 # User configuration
 
@@ -103,3 +101,10 @@ alias config='/usr/bin/git --git-dir=$HOME/.mydotfiles/ --work-tree=$HOME'
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias config='/usr/bin/git --git-dir=$HOME/.mydotfiles/ --work-tree=$HOME'
+cdls() {
+   cd "$1" && ls;
+}
+alias cd='cdls'
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
