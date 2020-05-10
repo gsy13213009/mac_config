@@ -25,7 +25,8 @@ noremap <C-j> <C-w>j
 noremap <C-k> <C-w>k
 noremap <C-l> <C-w>l
 
-cnoremap w!! w !sodu tee % >/dev/null "Sudo to write
+cnoremap w!! w !sudo tee % >/dev/null
+cnoremap x! w !sudo tee % >/dev/null
 com! Jsonformat %!python3 -m json.tool "json 格式化
 
 " Specify a directory for plugins
