@@ -10,7 +10,7 @@
 
 ### 后期可以用config add xxx -f强制将文件添加到git仓库中
 - fork一份自己的仓库
-- `config remote rm origin`
+- `config remote rm origin`
 - `config remote add origin <自己的仓库地址>`
 - `config push --set-upstream origin $(git_current_branch)`
 - 以后就可以用config来管理电脑配置文件了, 换电脑也只需要执行两次命令重新把所有软件/配置安装回来😄
