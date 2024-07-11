@@ -78,9 +78,7 @@ plugins=(git autojump zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
-alias cp='cp -i'
-alias mv='mv -i'
-alias vi='vim'
+
 
 # User configuration
 
@@ -114,3 +112,5 @@ cdls() {
 alias cd='cdls'
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+[ -f ~/.bash_profile ] && source ~/.bash_profile
+[ -f ~/.bashrc ] && source ~/.bashrc
