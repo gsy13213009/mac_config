@@ -32,31 +32,31 @@ com! Jsonformat %!python3 -m json.tool "json 格式化
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
-call plug#begin('~/.vim/plugged')
-Plug 'mhinz/vim-startify'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'yggdroot/indentline'
-Plug 'scrooloose/nerdtree'
-Plug 'ctrlpvim/ctrlp.vim'
+"call plug#begin('~/.vim/plugged')
+"Plug 'mhinz/vim-startify'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+"Plug 'yggdroot/indentline'
+"Plug 'scrooloose/nerdtree'
+"Plug 'ctrlpvim/ctrlp.vim'
 "ss {key} key
-Plug 'easymotion/vim-easymotion'
+"Plug 'easymotion/vim-easymotion'
 "ds (delete a surrounding)
 "cs (change a surrounding)
 "ys (you add a surrounding)
 "cs " ' 将双引号改为单引号
 "ys iw " 添加双引号
-Plug 'tpope/vim-surround'
+"Plug 'tpope/vim-surround'
 "模糊搜索
 "File {name}
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-call plug#end()
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf.vim'
+"call plug#end()
 
-nnoremap <leader>v :NERDTreeFind<cr>
-nnoremap <leader>g :NERDTreeToggle<cr>
-let NERDTreeShowHidden=1
-let NERDTreeIgnore = [
+"nnoremap <leader>v :NERDTreeFind<cr>
+"nnoremap <leader>g :NERDTreeToggle<cr>
+"let NERDTreeShowHidden=1
+"let NERDTreeIgnore = [
 	\ '\.git$', '\.hg$', '\.svn$', '\.stversion', '\.pyc$', '\.pyo$', '\.swp$',
 	\ '\.DS_Store$', '\.sass-cache$', '__pycaache__$', '\.egg-info$', '\.ropeproject$',]
 
